@@ -1,0 +1,563 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+
+body {
+	color: #222;
+	background: #fff;
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  a {
+	color: #0033cc;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+	body {
+	  color: #eee;
+	  background: #121212;
+	}
+  
+	body a {
+	  color: #809fff;
+	}
+  }
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #020202;
+	opacity: 0.8;
+	font-family: 'Poppins', sans-serif;
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	z-index: 1;
+  	width: 100%;
+}
+
+
+
+.logo img{
+	width: auto;
+    height: 7vh;
+	display: block;
+	margin-left: 0%;
+	margin-right: auto;
+	filter: invert(100%);
+}
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links a{
+	color: #EEEEEE;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+}
+
+.nav-links a.active{
+	background:  #EEEEEE;
+	color: #333333;
+	transition: 0.5s;
+}
+
+.nav-links a:hover{
+	border: 1px solid white;
+	transition: 0.5s;
+}
+
+.burger{
+	display: none;
+	cursor:  pointer;
+}
+
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color: #EEEEEE;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px){
+	.logo img{
+		height: 5vh;
+	}
+	.nav-links{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	body{
+		overflow-x: hidden;
+	}
+
+	nav{
+		background-color: #333333;
+		opacity: 1;
+
+	}
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top:8vh;
+		background-color: #333333;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.nav-links li{
+		opacity: 0;
+	}
+
+	.nav-links a.active{
+		background:  transparent;
+		color: #3498db;
+		border: none;
+	}	
+
+	.nav-links a:hover{
+		border: none;
+		color:#3498db;
+		transition: 0.5s;
+	}
+
+	.burger{
+		display: block;
+	}
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*body*/
+
+
+.portfolio{
+	position:absolute;
+    top:0px;
+    left:0;
+    width:100%
+}
+
+.welcome{
+	background-image: url(src/img/bg.png);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height: 130vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.top{
+	padding-top: 10%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.mainLOGO {
+	width: 100%;
+    height: auto;
+}
+
+.mainLOGO img{
+	width: 50%;
+    height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mainLOGO img:hover{
+	width: 60%;
+	transition: 0.5s;
+}
+
+.motto{
+	font-style: italic;
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.motto li{
+	list-style: none;
+}
+
+.motto h1 {
+	text-decoration: none;
+	font-style: italic;
+	font-size: 3vh;
+	padding: 7px 10px;
+	text-align: center;
+	text-shadow:white 0 0 0.4em;
+  }
+
+
+
+.social-links{
+	padding-top: 5vh;
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;	
+}
+
+.social-links li{
+	width: 10%;
+	display: inline;
+	vertical-align: middle;
+	list-style: none;
+	border-radius: 50%;
+}
+
+.social-links li:hover{
+	width: 12%;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 1024px){
+	.top{
+		padding-top: 30%;
+	}
+	.mainLOGO img{
+		width: 70%;
+	}
+	.mainLOGO img:hover{
+		width: 85%;
+		transition: 0.5s;
+	}
+	.motto h1{
+		font-size: 2.5vh;
+	}
+	.social-links{
+		padding-top: 3vh;
+		width: 60%;
+	}
+	
+	.social-links li{
+		padding-top: 1vh;
+		width: 10%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.top{
+		padding-top: 40%;
+	}
+	.mainLOGO img{
+		width: 90%;
+	}
+	.mainLOGO img:hover{
+		width: 95%;
+		transition: 0.5s;
+	}
+	.motto{
+		margin-top: -1vh;
+		font-size: 0.8vh;
+	}
+	.social-links{
+		width: 80%;
+	}
+	
+	.social-links li{
+		width: 10%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.mainLOGO img{
+		filter: invert(100%);
+	}
+
+	.motto h1 {
+		text-shadow:black 0 0 0.4em;
+	  }
+
+	.social-links li{
+		filter: invert(100%);
+	}
+
+}
+.body{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 0%;
+	margin-left: 15%;
+	margin-right: 15%;	
+}
+.aboutme-body{
+	margin-top: -15%;
+}
+
+.text{
+	text-align: justify;
+	width: 75%;
+	padding-right: 10%;
+}
+
+.text h1:hover{
+	transform:translate(3%,0);
+	transition: 0.5s;
+}
+
+.text h3{
+	font-weight: 100 ;
+	font-style: italic;
+}
+
+.image{
+	width: 25%;
+	height: auto;
+
+}
+
+.image img{
+	width: 100%;
+	height: auto;
+}
+@media screen and (max-width: 768px){
+	.body{
+		flex-direction: column-reverse;
+	}
+	
+	.text h1:hover{
+		transform:scale(1.3);
+		transition: 0.5s;
+	}
+
+	.text{
+		text-align: center;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.topfade{
+	background: white;
+	min-height: 25vh;
+	width: 100%;
+	background: linear-gradient(rgba(255, 255, 255, 255),rgba(255, 255, 255, 0));
+}
+
+
+.engineering{
+	background-image: url(src/img/engineering_light.svg);
+	background-size:cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.istruzione{
+	padding-left: 10%;
+	padding-right: 0%;
+}
+
+.polimilogoimg{
+	content:url(./src/logos/polimi/logopolimilight.svg);
+}
+
+@media screen and (max-width: 768px){
+	.istruzione{
+		padding-left: 0;
+	}
+	.engineering .polimi-logo{
+		width: 50%;
+		padding-top: 5%;
+	}
+}
+
+
+.esperienze-lavorative-body{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	margin-top: 3%;
+
+}
+
+.engineering .company-logos{
+	width: 25%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+.baxter{
+	content:url(./src/logos/baxter/logo-baxterlight.png);
+}
+.levissima{
+	content:url(./src/logos/levissima/logo-levissimalight.png);
+}
+
+
+@media screen and (max-width: 768px){
+	.esperienze-lavorative-body{
+		margin-top: 10%;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+	
+	.engineering .company-logos{
+		width: 70%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.engineering .company-logos img{
+		width:40%;
+		height: 40%;
+		align-self: center;
+	}
+}
+
+
+.bottomfade{
+	background: white;
+	min-height: 25vh;
+	width: 100%;
+	background: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 255));
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.engineering {background-image: url(src/img/engineering_dark.svg);}
+	.topfade{background: linear-gradient(rgba(18, 18, 18, 255),rgba(18, 18, 18, 0));}
+	.polimilogoimg{content:url(./src/logos/polimi/logopolimidark.svg);}
+	.baxter{content:url(./src/logos/baxter/logo-baxterdark.png);}
+	.levissima{content:url(./src/logos/levissima/logo-levissimadark.png);}
+	.bottomfade{background: linear-gradient(rgba(18, 18, 18, 0),rgba(18, 18, 18, 255));}
+}
+
+
+
+.photography{
+	background-image: url(src/img/photography.jpg);
+	background-size:cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.photography-body{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 0%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+.photography-text{
+	text-align: justify;
+	width: 75%;
+	padding-left: 10%;
+}
+
+.photography-text h1:hover{
+	transform:translate(3%,0);
+	transition: 0.5s;
+}
+
+.photography-text h3{
+	font-weight: 100 ;
+	font-style: italic;
+}
+
+.photography-body.photography-img{
+	width: 25%;
+	height: auto;
+
+}
+
+.photography .photography-img img{
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 768px){
+	.photography-body{
+		flex-direction: column-reverse;
+	}
+
+	.photography-text h1:hover{
+		transform:scale(1.3);
+		transition: 0.5s;
+	}
+
+	.photography-text{
+		text-align: center;
+		padding-left: 0;
+	}
+	.photography-text .photography-img{
+		width: 50%;
+		padding-top: 5%;
+	}
+}
