@@ -434,6 +434,7 @@ body {
     justify-content: space-around;
     margin-left: 1em;
     margin-right: 1em;
+    min-height: 7em;
 }
 
 .CF-title{
