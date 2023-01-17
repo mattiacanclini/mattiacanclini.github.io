@@ -81,6 +81,14 @@ body {
     font-weight: 900;
 }
 
+.flag img{
+    height: 1em;
+}
+
+.factive img{
+    outline: Solid 0.1em white;
+}
+
 
 .bio{
     margin: 5em;
