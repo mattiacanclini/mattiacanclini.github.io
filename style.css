@@ -94,7 +94,7 @@ body {
     width: 30%;
     height: auto;
     border: Solid 1em;
-    border-color: #88888888;
+    border-color: #444;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -212,7 +212,7 @@ body {
     flex-direction: column;
     align-items: center;
     border: 0.1em solid;
-    border-color: rgb(100, 100, 100);
+    border-color: #444;
     border-radius: 0.5em;
     width: 25%;
     text-align: center;
@@ -256,9 +256,13 @@ body {
     padding: 2em;
     padding-top: 0%;
 }
+
+.companylogo img{
+    filter: brightness(2);
+}
 .socials{
     border-top: 0.02em solid;
-    border-color: rgb(100, 100, 100);
+    border-color: #444;
     width: 100%;
     display: flex;
     margin-top: 2em;
@@ -363,8 +367,7 @@ body {
 .RE-company{
     font-size: 12px;
     font-weight: 100;
-    color: rgb(127, 127, 127);
-
+    color: #bbbbbb;
 }
 
 .RE-companylogo{
@@ -372,6 +375,10 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: 2em;
+}
+
+.RE-companylogo img{
+    filter: brightness(2);
 }
 
 .RE-title{
@@ -383,7 +390,7 @@ body {
 .RE-desc{
     font-size: 12px;
     font-weight: 100;
-    color: rgb(127, 127, 127);
+    color: #bbbbbb;
     margin-top: 1em;
 }
 
@@ -435,7 +442,7 @@ body {
 .CF-date{
     font-size: 10px;
     font-weight: 100;
-    color: rgb(127, 127, 127);
+    color: #bbbbbb;
 }
 
 
@@ -498,6 +505,7 @@ body {
     display: flex;
     align-items: flex-start;
     width: 30vw;
+    margin-bottom: 1em;
 }
 
 .passion-icon{
