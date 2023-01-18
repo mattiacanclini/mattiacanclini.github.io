@@ -605,12 +605,7 @@ body {
     width: 100%;
 }
 
-@media screen and (max-width: 768px){
-    .certificates{
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 
 .certificate{
@@ -619,6 +614,17 @@ body {
     overflow: hidden;
     display: flex;
     width: 30vw;
+}
+
+@media screen and (max-width: 768px){
+    .certificates{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate{
+        width: 60vw;
+    }
 }
 
 .CF-logo{
