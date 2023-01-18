@@ -27,16 +27,37 @@
                     <li><a class="flag factive" href="/resume.html"><img src="./src/icons/gb.svg" alt="EN"></a></li>
                     <li><a class="flag" href="/it-IT/resume.html"><img src="./src/icons/it.svg" alt="IT"></a></li>
                 </ul>
+                <div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
             </nav>
         </header>
         <main>
             <div class="title">Resume</div>
+            <div class="cols section desktop">
+                <div class="subsection-title">
+                    Education
+                    <div class="underline"><div class="blueunderline"></div></div>
+                </div>
+                <div class="subsection-title">
+                    Work
+                    <div class="underline"><div class="blueunderline"></div></div>
+                </div> 
+            </div>
+            <div class="cols section mobile">
+                <button id="TlE" class="TL subsection-title active" onclick="openTab(event, 'Edu')">
+                    Education
+                    <div class="underline"><div class="blueunderline"></div></div>
+                </button>
+                <button id="TlW" class="TL subsection-title" onclick="openTab(event, 'Work')">
+                    Work
+                    <div class="underline"><div class="blueunderline"></div></div>
+                </button> 
+            </div>
             <div class="cols section">
-                <div class="edu-resume">
-                    <div class="subsection-title">
-                        Education
-                        <div class="underline"><div class="blueunderline"></div></div>
-                    </div>
+                <div id="Edu" class="TT edu-resume">
                     <ul>
                         <li>
                             <div class="resume-element">
@@ -106,11 +127,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="work-resume">
-                    <div class="subsection-title">
-                        Work
-                        <div class="underline"><div class="blueunderline"></div></div>
-                    </div> 
+                <div id="Work" class="TT work-resume">
                     <ul>
                         <li>
                             <div class="resume-element">
@@ -701,5 +718,7 @@
             </div>
         </main>
     </div>
+    <script src="app.js"></script>
+    <script src="toggleTab.js"></script>
 </body>
 </html>
