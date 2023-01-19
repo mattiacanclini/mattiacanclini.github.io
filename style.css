@@ -114,6 +114,7 @@ body {
 
 @media screen and (max-width: 768px){
 	body{
+        max-width: 100%;
 		overflow-x: hidden;
 	}
 
@@ -280,6 +281,9 @@ body {
     }
     .profilepic{
         width: 50%;
+        border: Solid .5em;
+        border-color: #444;
+
     }
     .biodesc{
         text-align: center;
@@ -398,7 +402,7 @@ body {
         justify-content: space-around;
     }
     .companylogo{
-        width: 35%;
+        width: 40%;
     }
 }
 
@@ -461,6 +465,8 @@ body {
     margin-top: 3em;
     margin-bottom: 2em;
     width: max-content;
+    max-width: 80vw;
+    overflow-wrap: break-word;
     
 }
 
@@ -470,8 +476,8 @@ body {
     margin-left: 0em;
     margin-top: 1em;
     margin-bottom: 0.5em;
-    width: max-content;
-    
+    max-width: 100vw;
+    overflow-wrap: break-word;
 }
 
 .edu-resume li{
@@ -523,17 +529,19 @@ body {
     font-size: 12px;
     font-weight: 100;
     color: #bbbbbb;
+   min-width: max-content;
 }
 
 .RE-companylogo{
-    width: 5vw;
-    height: auto;
     margin-left: auto;
     margin-right: 2em;
 }
 
 .RE-companylogo img{
+    height: 2vw;
+    width: auto;
     filter: brightness(2);
+    margin: auto;
 }
 
 .RE-title{
@@ -585,8 +593,8 @@ body {
         width: 70vw;
     }
 
-    .RE-companylogo{
-        width: 15vw;
+    .RE-companylogo img{
+        height: 5vw;
     }
 
 
@@ -604,6 +612,7 @@ body {
     .extraact{
         flex-direction: column;
         align-items: center;
+        max-width: 100vw;
     }
 }
 
@@ -788,13 +797,13 @@ body {
     margin-left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .contact{
     display: flex;
     align-items: center;
-    width: 30vw;
+    width: max-content;
     text-decoration: none;
     color: white;
 }
@@ -825,6 +834,14 @@ body {
     }
     .mobile{
         display:flex;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .contacts{
+        margin: 0;
+        align-items: center;
     }
 
 }
