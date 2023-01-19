@@ -540,6 +540,7 @@ body {
 .RE-companylogo img{
     height: 2vw;
     width: auto;
+    max-width: 5vw;
     filter: brightness(2);
     margin: auto;
 }
@@ -595,6 +596,7 @@ body {
 
     .RE-companylogo img{
         height: 5vw;
+        max-width: 15vw;
     }
 
 
