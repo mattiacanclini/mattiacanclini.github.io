@@ -244,8 +244,8 @@ main{
 }
 
 .profilepic{
-    width: 30%;
-    height: auto;
+    width: 25vw;
+    height: 25vw;
     border: Solid 1em;
     border-color: #444;
     border-radius: 50%;
@@ -253,7 +253,8 @@ main{
 }
 
 .profilepic img{
-    width: 100%;
+    width: 120%;
+    margin: -10%;
 }
 
 .biodesc{
@@ -338,7 +339,8 @@ main{
         flex-direction: column;
     }
     .profilepic{
-        width: 50%;
+        width: 50vw;
+        height: 50vw;
         border: Solid .5em;
         border-color: #444;
 
