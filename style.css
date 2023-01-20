@@ -56,7 +56,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 8vh;
+	height: 9vh;
 	min-height: 38px;
   	top: 0;
   	left: 0;
@@ -155,26 +155,24 @@ body {
     .main-container{
 		overflow-x: hidden;
         width: 95vw;
+        margin: 2.5vw;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
 	}
 
     header{
-        width: 100%;
         overflow-x: hidden;
     }
 
 	nav{
-        width: 100%;
-        max-width: 100%;
 		overflow-x: hidden;
 	}
 	.nav-links{
 		position: absolute;
 		right: 0px;
 		height: 92vh;
-		top:10vh;
+		top:10.5vh;
         border-radius: 3em;
 		background-color: #222;
 		display: flex;
@@ -190,15 +188,23 @@ body {
 		opacity: 0;
 	}
 
+    .nav-links li a{
+		display: none;
+	}
+
 	.burger{
 		display: block;
 	}
 }
 
 .nav-active{
-	transform: translateX(-2rem);
+	transform: translateX(-2.5vw);
     width: 50%;
     z-index: 1;
+}
+
+.nav-active.nav-links li a{
+    display: block;
 }
 
 
@@ -224,7 +230,9 @@ body {
 	transform: rotate(45deg) translate(-5px,-6px);
 }
 
-
+main{
+    width: 100%;
+}
 
 
 .bio{
@@ -355,7 +363,7 @@ body {
     margin-left: 2em;
     margin-top: 3em;
     margin-bottom: 2em;
-    width: max-content;
+    width: inherit;
     
 }
 .underline{
