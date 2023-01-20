@@ -37,6 +37,9 @@ a:active {
 
 body {
     background-color: #0083db;
+    background-image: url("./src/img/BLUEPRINT.svg");
+    background-repeat: repeat;
+    background-size: 3rem;
 	color: #eeeeee;
 	font-family: 'Sofia Sans', sans-serif;
 	display: flex;     
