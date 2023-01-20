@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <nav>
+                <div class="nav-name">
+                    <a href="/"><b>Mattia</b> Canclini</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a class="active" href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./extra.html">Extra</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                    <li><a class="flag factive" href="/portfolio.html"><img src="./src/icons/gb.svg" alt="EN"></a></li>
+                    <li><a class="flag" href="/it-IT/portfolio.html"><img src="./src/icons/it.svg" alt="IT"></a></li>
+                </ul>
+                <div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+            </nav>
+        </header>
+        <main>
+            <div class="title">Portfolio</div>
+            <div class="portfolio section">
+                <div class="portfolio-elem">
+                    <div class="subsection-title">
+                        Redundant Manipulator path planning under pose uncertainty <br> -Thesis-
+                        <div class="underline"><div class="blueunderline"></div></div>
+                    </div>
+                    <div class="imgleft portfolio-content">
+                        <div class="portfolio-desc">
+                            <p>The thesis implement a trajectory planner based on ABIT* oriented to automatic table grape harvesting guaranteeing the integrity of the bunch and of the plant throughout the entire operation.<br>
+                                The manipulator used was an Emika Franka Panda.</p>
+                        </div>
+                        <div class="portfolio-img">
+                            <img src="./src/img/panda.svg" alt="panda" style="filter: invert(1);">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-elem">
+                    <div class="subsection-title">
+                        Magnetic levitation <br> -Automation and Control Laboratory-
+                        <div class="underline"><div class="blueunderline"></div></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-desc">
+                            <p>The objective of this project was to find different solution for controlling the position of the sphere on the z-axis through an electro-magnet in the upper part of the Maglev.<br>
+                                The developed controller included PI, LQI with Extended Kalman Filter, MPC and Gain Scheduling</p>
+                        </div>
+                        <div class="portfolio-img">
+                            <img src="./src/img/maglev.svg" alt="panda" style="filter: invert(1);">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-elem">
+                    <div class="subsection-title">
+                        Hydropower System Hazard Analysis <br> -Safety in Automation Systems Project-
+                        <div class="underline"><div class="blueunderline"></div></div>
+                    </div>
+                    <div class="imgleft portfolio-content">
+                        <div class="portfolio-desc">
+                            <p>The aim of the analysis was to assess the safety of an hydroelectric powerplant.<br>
+                                The analysis made use of multiple techniques: Functional Analysis and operating conditions, PHA (Preliminary Hazard Analysis), FMEA (Failure Mode and Effect Analysis), FTA (Fault Tree Analysis), ET (Event tree).</p>
+                        </div>
+                        <div class="portfolio-img">
+                            <img src="./src/img/hydropower.svg" alt="panda" style="filter: invert(1);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/mattia-canclini" target="_blank"><img src="src/icons/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.instagram.com/mattiacanclini" target="_blank"><img src="src/icons/instagram.svg" alt="instagram"></a>
+                <a href="https://www.facebook.com/mattia.canclini" target="_blank"><img src="src/icons/facebook.svg" alt="facebook"></a>
+
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

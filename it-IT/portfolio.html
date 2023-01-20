@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <nav>
+                <div class="nav-name">
+                    <a href="/"><b>Mattia</b> Canclini</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a class="active" href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./extra.html">Extra</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                    <li><a class="flag" href="/portfolio.html"><img src="../src/icons/gb.svg" alt="EN"></a></li>
+                    <li><a class="flag factive" href="/it-IT/portfolio.html"><img src="../src/icons/it.svg" alt="IT"></a></li>
+                </ul>
+                <div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+            </nav>
+        </header>
+        <main>
+            <div class="title">Portfolio</div>
+            <div class="portfolio section">
+                <div class="portfolio-elem">
+                    <div class="subsection-title">
+                        Pianificazione della traiettoria con manipolatore ridondante con incertezza <br> -Tesi-
+                        <div class="underline"><div class="blueunderline"></div></div>
+                    </div>
+                    <div class="imgleft portfolio-content">
+                        <div class="portfolio-desc">
+                            <p>La tesi implementa un pianificatore di traiettorie basato su ABIT* orientato alla raccolta automatica di uva da tavola garantendo l'integrità del grappolo e della pianta durante l'intera operazione.<br>
+                                Si è utilizzato un Emika Franka Panda.</p>
+                        </div>
+                        <div class="portfolio-img">
+                            <img src="../src/img/panda.svg" alt="panda" style="filter: invert(1);">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-elem">
+                    <div class="subsection-title">
+                        Levitatore Magnetico <br> -Automation and Control Laboratory-
+                        <div class="underline"><div class="blueunderline"></div></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-desc">
+                            <p>L'obiettivo di questo progetto era quello di implementare con diverse soluzioni un sistema capace di controllare la posizione della sfera sull'asse z attraverso un elettromagnete nella parte superiore del Maglev.<br>
+                                I controllori sviluppati comprendevano PI, LQI con Extended Kalman FIlter, MPC e Gain Scheduling</p>
+                        </div>
+                        <div class="portfolio-img">
+                            <img src="../src/img/maglev.svg" alt="panda" style="filter: invert(1);">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-elem">
+                    <div class="subsection-title">
+                        Analisi della sicurezza di un impianto idroelettrico <br> -Progetto di Safety in Automation Systems-
+                        <div class="underline"><div class="blueunderline"></div></div>
+                    </div>
+                    <div class="imgleft portfolio-content">
+                        <div class="portfolio-desc">
+                            <p>L'analisi mirava a valutare la sicurezza di una centrale idroelettrica.<br>
+                                Durante lo sviluppo si è fatto uso di diverse tecniche quali: analisi funzionale e condizioni operative, PHA (Preliminary Hazard Analysis), FMEA (Failure Mode and Effect Analysis), FTA (Fault Tree Analysis), ET (Event tree).</p>
+                        </div>
+                        <div class="portfolio-img">
+                            <img src="../src/img/hydropower.svg" alt="panda" style="filter: invert(1);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/mattia-canclini" target="_blank"><img src="../src/icons/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.instagram.com/mattiacanclini" target="_blank"><img src="../src/icons/instagram.svg" alt="instagram"></a>
+                <a href="https://www.facebook.com/mattia.canclini" target="_blank"><img src="../src/icons/facebook.svg" alt="facebook"></a>
+
+            </div>
+        </main>
+    </div>
+    <script src="../app.js"></script>
+</body>
+</html>
