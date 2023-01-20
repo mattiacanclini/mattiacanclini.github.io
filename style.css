@@ -116,6 +116,10 @@ body {
 	body{
         max-width: 100%;
 		overflow-x: hidden;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
 	}
 
 	nav{
@@ -586,12 +590,16 @@ body {
 
     .edu-resume li{
         list-style: none;
-        width: 70vw;
+        width: 60vw;
     }
     
     .work-resume li{
         list-style: none;
-        width: 70vw;
+        width: 60vw;
+    }
+
+    .RE-company{
+       min-width: min-content;
     }
 
     .RE-companylogo img{
