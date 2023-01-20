@@ -663,6 +663,8 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    gap: 2em;
+    flex-wrap: wrap;
 }
 
 .certificate{
@@ -686,11 +688,18 @@ body {
 
 .CF-logo{
     background-color: #444;
+    color: #222;
     width: 7em;
     height: inherit;
     padding: 1em;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.CF-logo p{
+    font-weight: 900;
+    font-size: 4em;
 }
 
 .CF-info{
@@ -700,6 +709,7 @@ body {
     margin-left: 1em;
     margin-right: 1em;
     min-height: 7em;
+    width:inherit;
 }
 
 .CF-title{
