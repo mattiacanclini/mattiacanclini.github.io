@@ -152,6 +152,14 @@ body {
         box-sizing: border-box;
 	}
 
+    .main-container{
+		overflow-x: hidden;
+        width: 95vw;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+	}
+
 	nav{
 
 	}
