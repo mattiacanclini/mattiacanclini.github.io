@@ -272,7 +272,12 @@ main{
 
 .desc{
     font-weight: 200;
+    text-indent: 0.25em;
 }
+.desc p{
+    margin-bottom: 0.5em;
+}
+
 
 .bio_buttons{
     display: flex;
