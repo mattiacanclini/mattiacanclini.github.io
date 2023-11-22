@@ -682,6 +682,19 @@ main{
 }
 
 @media screen and (max-width: 768px){
+
+    .RE-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1em;
+        margin-left: -1.5em;
+    }
+    .RE-companylogo{
+        margin: 0;
+    }
+
     .subsection-title{
         margin-left: auto;
         margin-right: auto;
